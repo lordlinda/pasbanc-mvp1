@@ -1,0 +1,217 @@
+.topnav {
+  overflow: hidden;
+  background-color:#720b98 ;
+}
+
+.topnav a {
+  float: right;
+  color: #0f0;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+
+
+.topnav .icon {
+  display:none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:last-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+		  .header-content {
+		 color:#fff;
+		 font-weight: 600;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		height: 100vh ;
+		margin: auto;
+		padding: 20px;
+		text-align: left;
+		font-size:50px;
+		background-image:url('macOS-Wallpapers-06.jpg');
+		min-height: 100%;
+		position: relative;
+		background-position: center;
+		opacity:1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		background-attachment: fixed;
+
+	}
+	.header-content h1{
+		line-height: 130%;
+		margin-bottom:50px;
+	}
+
+
+
+		.header-content button {
+			background-color: #0f0;
+			border-radius: 30px;
+			color: #fff;
+			font-size: 15px;
+			padding: 11px 34px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+			@media screen and (max-width: 500px) {
+			.header-content {
+				align-items: center;
+				text-align: center;
+			}
+			
+			
+		}
+		
+
+		.feature_box{
+			text-align: center;
+			padding:20px;
+			height:400px;
+			background-color: #fff;
+            position:relative;
+			border-radius: 5px ;
+			
+		}.card{
+			background-color:#fff;
+			border: 2px solid #0f0;
+			position: relative;
+			overflow: hidden;
+			height: 300px;
+			
+		}
+		/*hover effect*/
+		:root {
+			--move: 95%;
+			--move-neg: -95%;
+		}
+		.inner-card {
+		background-color:#fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left:0 ;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.3s ease;
+		z-index: 5;
+		
+		}
+		.inner-card ul{
+			list-style: none;
+			color:indigo;
+			line-height: 35px;
+		}
+		.inner-card ul a{
+			color:#000;
+		}
+		.inner-card:nth-of-type(1) {
+			transform: translateY(var(--move-neg));
+		}
+
+		
+
+		.inner-card:hover {
+			transform: translate(0, 0);
+			z-index: 10;
+		}
+
+      
+		
+		
+		.feature_container{
+			background-color: #720b98;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		
+
+		.feature_content{
+			margin:0px 0px;
+			text-align: top;
+			padding-bottom: 100px;
+			line-height: 35px;
+			}
+		.whypasbanc{
+			background-color: indigo;
+			color:#fff;
+			padding: 20px;
+			
+		}
+		.whypasbanc a{
+			color:#fff;
+			text-decoration: none;
+		}
+		.story{
+		background-color: green;
+		color:#fff;
+		padding: 20px;
+
+	}
+		.story a{
+			color:#fff;
+			text-decoration: none;
+
+		}
+
+		
+		footer{
+			background-color: rgb(0,0,45)
+	;
+			margin-top:-100px;
+			color:#fff;
+			padding-top: 50px;
+
+		}
+		footer a{
+			color:#ddd;
+		}
+		footer a:hover{
+			color:#0f0;
+			text-decoration:none;
+
+		}
+		/*Media queries*/
+		@media screen and (max-width: 10000px){
+			.feature_box{
+			
+			}
+			
+		}
+		@media screen 
+  and (min-device-width: 1500px) {
+  	 .two-columns {
+  	 	padding-left: 150px;
+  	 }
+  }
